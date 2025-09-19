@@ -39,14 +39,14 @@ def cmd(x):
     repo_dir = os.path.dirname(os.path.abspath(__file__))
     if x == 1:      
         print("")
-        num_lines = random.randint(2, 5)  # random number of lines
+        num_lines = random.randint(2, 5)
 
         for _ in range(num_lines):
-            # Decide how many times to repeat this line
+          
             repeat_count = 10
         for _ in range(repeat_count):
-             # Generate a fresh random line every time
-            line_length = random.randint(20, 20)  # how many digits in a line
+             
+            line_length = random.randint(20, 20)  
             line = "".join(str(random.randint(-1, 1)) for _ in range(line_length))
             print("      ",line)
         input("return")
@@ -66,12 +66,12 @@ def cmd(x):
     elif x == 4:
         print("")
         menu()  
-    elif x == 5:  # Git Pull
+    elif x == 5:  
         print("Running git pull...")
         git_pull(repo_dir)
         menu()
 
-    elif x == 6:  # Git Push
+    elif x == 6: 
         print("Running git push...")
         updmsg = str(input("commit msg? "))
         git_push(repo_dir, updmsg)
