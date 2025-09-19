@@ -73,7 +73,7 @@ def cmd(x):
 
     elif x == 6:  # Git Push
         print("Running git push...")
-        updmsg = str(input("commit msg?"))
+        updmsg = str(input("commit msg? "))
         git_push(repo_dir, updmsg)
         menu()    
 
